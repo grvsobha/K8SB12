@@ -27,6 +27,7 @@ spec:
   ports:
     - port: 80
       targetPort: 9090
+      nodePort: 30008
   selector:
     k8s-app: kubernetes-dashboard
 
