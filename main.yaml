@@ -1,0 +1,36 @@
+provider "aws" {
+  access_key = "AKIAZA4GLCVMLRX775HT"
+  secret_key = "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"
+  region     = "us-east-2"
+}
+/*resource "aws_instance" "web" {
+  ami           = "ami-0cc87e5027adcdca8"
+  instance_type = "t2.micro"
+  tags = {
+    Name = "web"
+  }
+}*/
+/*resource "aws_vpc" "myvpc" {
+  cidr_block = "10.0.0.0/16"
+}*/
+/*resource "aws_s3_bucket" "febtest" {
+  bucket = "my-tf-test-bucketfeb"
+
+  tags = {
+    Name        = "febtest"
+    Environment = "Dev"
+  }
+}*/
+
+/*resource "aws_s3_bucket_acl" "example" {
+  bucket = aws_s3_bucket.b.id
+  acl    = "private"
+}*/
+resource "aws_s3_bucket" "febtest" {
+  bucket = "my-tf-test-bucketfeb"
+  acl    = "private"
+
+  versioning {
+    enabled = true
+  }
+}
