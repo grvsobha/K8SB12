@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
   - image: nginx
-    name: c5
+    name: c1
     volumeMounts:
     - name: config-volume
       mountPath: /etc/config
