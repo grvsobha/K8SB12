@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/grvsobha/argcod.git
     targetRevision: HEAD
-    path: dev
+    path: main
   destination: 
     server: https://kubernetes.default.svc
     namespace: frontend
