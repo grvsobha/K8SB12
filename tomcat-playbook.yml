@@ -20,10 +20,10 @@
 
 ##########
 syntax validator
-ansible-plyabook playbook3.yml --syntax-check
+ansible-plyabook playbook2.yml --syntax-check
 
 Execution:
-ansible-plyabook playbook3.yml
+ansible-plyabook playbook2.yml
 
 Result:
 public ip: ansible-slavepublicip(host publicip):8080/sample
